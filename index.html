@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    label{
+        font-size: large;
+    }
+    .box-1 select{
+        width: 200px;
+        height: 30px;
+    }
+    .box-2 input{
+        width: 200px;
+        height: 30px;
+    }
+    .container{
+        border: 1px solid black;
+        width: 470px;
+        padding: 10px;
+  
+    }
+    .box-1{
+        position: relative;
+    }
+    .country-1{
+        width: 50%;
+    }
+    .country-2{
+        width: 50%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        
+    }
+
+    .box-2{
+
+        position: relative;
+        margin-top: 20px;
+    }
+    .De{
+        width: 50%;
+        
+    }
+    .Re{
+
+        width: 50%;
+        position: absolute;
+        right: 0;
+        top: 0px;
+    }
+    .box-3{
+        width: 460px;
+        position: relative;
+        margin-top: 20px;
+    }
+    .Ad{
+        width: 25%;
+    }
+    .Ch{
+        width: 25%;
+        position: absolute;
+        left: 115px;
+        top: 0;
+    }
+    .In{
+        width: 25%;
+        position: absolute;
+        left: 230px;
+        top: 0;
+    }
+    .Cu{
+        width: 25%;
+        position: absolute;
+        left: 345px;
+        top: 0;
+    }
+    #sent{
+        background-color:white;
+        
+    }
+    
+</style>
+<body>
+    <div class="container">
+        <div class="box-0">
+            <form action="">
+                <!-- Fly -->
+                <div class="box-1">
+                    <div class="country-1">
+                        <label for="">Flying from</label>
+                        <br>
+                        <select name="from" id="country1">
+                            <option value="bangkok">Bangkok,Thailand</option>
+                            <option value="bangkok">Tokyo,Japan</option>
+                        </select>
+                    </div>
+                    <div class="country-2" >
+                        <div style="float: right;">
+                            <label for="">Flying from</label>
+                            <br>
+                            <select name="from" id="country2" style="float: ;">
+                                <option value="bangkok">Bangkok,Thailand</option>
+                                <option value="bangkok">Tokyo,Japan</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <!-- Date -->
+                <div class="box-2">
+                    <div class="De">
+                        <label for="">Departing</label>
+                        <br>
+                        <input type="date" id="date-1">
+                    </div>
+                    <div class="Re">
+                        <div style="float: right;">
+                            <label for="">Returning</label>
+                            <br>
+                            <input type="date" id="date-2">
+                        </div>
+                    </div>
+                </div>
+                <!-- Counter -->
+                <div class="box-3">
+                    <div>
+                        <div class="Ad">
+                            <label for="">Adult</label>
+                            <br>
+                            <input type="number" id="adult" min="0" max="10">
+                        </div>
+                        <div class="Ch">
+                            <label for="">Child</label>
+                            <br>
+                            <input type="number" id="Child" min="0" max="10">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="In">
+                            <label for="">Infant</label>
+                            <br>
+                            <input type="number" id="Infant" min="0" max="10">
+                        </div>
+                        <div class="Cu">
+                            <label for="">Currency</label>
+                            <br>
+                            <select name="" id="Currency">
+                                <option value="">THB</option>
+                                <option value="">USD</option>
+                                <option value="">JPY</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <!-- Box-4 -->
+                <div class="box-4" style="text-align: center; margin-top: 10px;">
+                    <button id="sent">SEARCH</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
